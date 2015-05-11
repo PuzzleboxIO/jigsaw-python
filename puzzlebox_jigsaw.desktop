@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Puzzlebox Jigsaw
+GenericName=Jigsaw
+Comment=Puzzlebox Jigsaw is an integrated bio and neurofeedback marketing solution for video game and advertising content evaluation
+Exec=/usr/bin/env python /usr/lib/python2.7/site-packages/jigsaw-gui.py
+Icon=/usr/share/puzzlebox_jigsaw/images/puzzlebox.ico
+MimeType=application/x-puzzlebox;
+Terminal=false
+Encoding=UTF-8
+Type=Application
+Categories=Development;AudioVideo;Science
+X-Desktop-File-Install-Version=0.15

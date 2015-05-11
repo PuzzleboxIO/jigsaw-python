@@ -1,0 +1,4 @@
+include LICENSE.txt
+include puzzlebox_jigsaw_configuration.ini
+include puzzlebox_jigsaw.desktop
+include images/*

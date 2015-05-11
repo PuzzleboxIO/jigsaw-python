@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>695</width>
+    <height>475</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>641</width>
+     <height>474</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayoutFeedback" stretch="0,0,0,0,0,0,0,0,0,0,0,0">
+        <property name="rightMargin">
+         <number>6</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelPuzzleboxControlPanel">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>images/puzzlebox_logo.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::NoTextInteraction</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="textLabelTitlePuzzleboxJigsaw">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://jigsaw.puzzlebox.info&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; text-decoration: none; color:#000000;&quot;&gt;Puzzlebox&lt;br /&gt;Jigsaw&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+            <property name="openExternalLinks">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelWebsiteInformation">
+          <property name="text">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;For information and updates on&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;this software please visit:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelWebsiteAddress">
+          <property name="text">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://jigsaw.puzzlebox.info&quot;&gt;&lt;span style=&quot;text-decoration: none; color:#000000;; color:#0000ff;&quot;&gt;http://jigsaw.puzzlebox.info&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>15</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="Line" name="line_4">
+          <property name="frameShape">
+           <enum>QFrame::HLine</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>15</width>
+            <height>15</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelSubmitFeedback">
+          <property name="text">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Submit Feedback&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelFeedbackDescription">
+          <property name="text">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Please use this form to submit your&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;comments, bug reports, and feature requests&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QFormLayout" name="formLayout_3">
+          <property name="verticalSpacing">
+           <number>6</number>
+          </property>
+          <property name="topMargin">
+           <number>6</number>
+          </property>
+          <property name="bottomMargin">
+           <number>6</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelFeedbackName">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Name </string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEditFeedbackName">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelFeedbackEmail">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Email </string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEditFeedbackEmail">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="textEditFeedback">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="topMargin">
+           <number>6</number>
+          </property>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonSendFeedback">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string>Send</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <property name="leftMargin">
+         <number>6</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWebView" name="webViewWebBrowser">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutStatusBar">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLineEdit" name="lineEditWebStatus">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Status: N/A</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QProgressBar" name="progressBarWebProgress">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="value">
+             <number>0</number>
+            </property>
+            <property name="textVisible">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKit/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
