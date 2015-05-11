@@ -6,7 +6,7 @@
 # Copyright Puzzlebox Productions, LLC (2011-2015)
 
 __changelog__ = """
-Last Update: 2015.03.24
+Last Update: 2015.05.10
 """
 
 __todo__ = """
@@ -19,6 +19,8 @@ import os, sys, time
 import urllib
 
 import Puzzlebox.Jigsaw.Configuration as configuration
+
+configuration.JSON_AVAILABLE = False
 
 if configuration.ENABLE_PYSIDE:
 	try:
@@ -55,7 +57,12 @@ except AttributeError:
 
 from Puzzlebox.Jigsaw.Design_Plugin_Session import Ui_Form as Design
 
-import Puzzlebox.Jigsaw.Service_JSON as service_json
+try:
+	import Puzzlebox.Jigsaw.Service_JSON as service_json
+except:
+	print "WARN: [Jigsaw:Plugin_Session] JSON Service not available"
+else:
+	configuration.JSON_AVAILABLE = True
 
 
 #####################################################################
@@ -208,9 +215,19 @@ class puzzlebox_jigsaw_plugin_session(QtGui.QWidget, Design):
 		             QtCore.SIGNAL("stateChanged(int)"), \
 		             self.updateSessionEnableJSON)
 		
-		self.connect(self.pushButtonSessionJSON, \
-		             QtCore.SIGNAL("clicked()"), \
-		             self.startJSONService)
+		if configuration.JSON_AVAILABLE:
+
+			self.connect(self.pushButtonSessionJSON, \
+			             QtCore.SIGNAL("clicked()"), \
+			             self.startJSONService)
+		else:
+			#self.labelSessionPluginAPI.setVisible(False)
+			#self.checkBoxServiceEnableJSON.setVisible(False)
+			#print dir(self.horizontalLayout_2)
+			#self.horizontalLayout_2.setEnabled(False)
+			#self.lineSessionPluginAPI.setVisible(False)
+			
+			self.checkBoxServiceEnableJSON.setEnabled(False)
 	
 	
 	##################################################################

@@ -24,7 +24,10 @@ if configuration.ENABLE_PYSIDE:
 	try:
 		#import PySide as PyQt4
 		from PySide import QtCore, QtGui, QtNetwork, QtWebKit
-		from Puzzlebox.Jigsaw.Interface_JavaScript_PySide import puzzlebox_jigsaw_interface_javascript
+		try:
+			from Puzzlebox.Jigsaw.Interface_JavaScript_PySide import puzzlebox_jigsaw_interface_javascript
+		except:
+			"print ERROR: [Jigsaw:Plugin_Web] Exception importing JavaScript module"
 	except Exception, e:
 		print "ERROR: Exception importing PySide:",
 		print e
@@ -35,8 +38,10 @@ if configuration.ENABLE_PYSIDE:
 if not configuration.ENABLE_PYSIDE:
 	print "INFO: [Jigsaw:Plugin_Web] Using PyQt4 module"
 	from PyQt4 import QtCore, QtGui, QtNetwork, QtWebKit
-	from Puzzlebox.Jigsaw.Interface_JavaScript_PyQt import puzzlebox_jigsaw_interface_javascript
-
+	try:
+		from Puzzlebox.Jigsaw.Interface_JavaScript_PyQt import puzzlebox_jigsaw_interface_javascript
+	except:
+		"print ERROR: [Jigsaw:Plugin_Web] Exception importing JavaScript module"
 
 if (sys.platform == 'win32'):
 	DEFAULT_IMAGE_PATH = 'images'
@@ -106,12 +111,14 @@ class puzzlebox_jigsaw_plugin_web(QtGui.QWidget, Design):
 		self.customDataHeaders = ['URL']
 		self.protocolSupport = ['EEG']
 		
-		
-		self.jigsawJavaScript = \
-		   puzzlebox_jigsaw_interface_javascript( \
-			   DEBUG=DEBUG, \
-			   parent=self.parent)
-		
+		try:
+			self.jigsawJavaScript = \
+			   puzzlebox_jigsaw_interface_javascript( \
+				   DEBUG=DEBUG, \
+				   parent=self.parent)
+		except:
+			self.jigsawJavaScript = None
+			print "JavaScript module not available"		
 		
 		self.firstLoad = True
 	
