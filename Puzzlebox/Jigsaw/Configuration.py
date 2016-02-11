@@ -3,10 +3,10 @@
 #
 # Puzzlebox - Jigsaw - Configuration
 #
-# Copyright Puzzlebox Productions, LLC (2011-2015)
+# Copyright Puzzlebox Productions, LLC (2011-2016)
 
 __changelog__ = """\
-Last Update: 2015.03.25
+Last Update: 2016.02.10
 """
 
 import os, sys
@@ -19,6 +19,7 @@ DEBUG = 1
 
 CONFIGURATION_FILE_PATH = 'puzzlebox_jigsaw_configuration.ini'
 
+ENABLE_QT = True
 ENABLE_PYSIDE = True
 #ENABLE_PYSIDE = False
 
@@ -206,7 +207,7 @@ TRENDS_TRIGGER_MAXIMUM = 100
 
 
 #####################################################################
-# Brain Brainstorms Plug-in Configuration
+# Brainstorms Plug-in Configuration
 #####################################################################
 
 # Discrete control drives the robot for a set time period per detection.
@@ -279,7 +280,6 @@ MUSE_SERVER_PORT = 5001
 SPACEBREW_ENABLE = False
 SPACEBREW_HOST = 'server.neuron.brain'
 
-#EEG_PRESERVE_RAW_DATA = True
 EEG_PRESERVE_RAW_DATA = False
 
 EMULATE_THINKGEAR_FOR_EMOTIV = True
@@ -441,6 +441,26 @@ FLASH_SOCKET_POLICY_FILE = '''<?xml version="1.0"?>
    <site-control permitted-cross-domain-policies="all" />
    <allow-access-from domain="*" to-ports="__FLASH_SOCKET_POLICY_PORT__" />
 </cross-domain-policy>%c''' % 0
+
+
+#####################################################################
+# Rabbit MQ
+#####################################################################
+
+RABBITMQ_HOST = 'localhost'
+RABBITMQ_USERNAME = 'guest'
+RABBITMQ_PASSWORD = 'guest'
+PUBLISHER_USERNAME = 'brainsquared'
+PUBLISHER_DEVICE = 'neurosky'
+PUBLISHER_METRIC = 'mindwave'
+
+
+#####################################################################
+# Cloudbrain
+#####################################################################
+
+ENABLE_CLOUDBRAIN = True
+#ENABLE_CLOUDBRAIN = False
 
 
 #####################################################################
