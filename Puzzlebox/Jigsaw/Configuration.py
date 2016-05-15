@@ -459,8 +459,16 @@ PUBLISHER_METRIC = 'mindwave'
 # Cloudbrain
 #####################################################################
 
-ENABLE_CLOUDBRAIN = True
-#ENABLE_CLOUDBRAIN = False
+ENABLE_CLOUDBRAIN = False
+#ENABLE_CLOUDBRAIN = True
+
+
+#####################################################################
+# Jigsaw Joystick
+#####################################################################
+
+#ENABLE_JIGSAW_JOYSTICK = False
+ENABLE_JIGSAW_JOYSTICK = True
 
 
 #####################################################################
