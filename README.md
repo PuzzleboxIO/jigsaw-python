@@ -42,7 +42,7 @@ https://github.com/PuzzleboxIO/synapse-python
 
 - Create a symlink inside root directory to Synapse:
 
-Example: ln -s ../synapse-python/Puzzlebox/Synapse Synapse
+Example: ln -s ../../synapse-python/Puzzlebox/Synapse Synapse
 
 
 ============
@@ -59,7 +59,7 @@ $ git clone https://github.com/PuzzleboxIO/jigsaw-python
 
 $ cd jigsaw-python/Puzzlebox
 
-$ ln -s ../synapse-python/Puzzlebox/Synapse Synapse
+$ ln -s ../../synapse-python/Puzzlebox/Synapse Synapse
 
 $ cd ..
 
